@@ -30,6 +30,7 @@ const obtenerEntradas=()=>{ //Entradas son archivos que van a entrar a un proces
 export default defineConfig(
     {
         appType:'mpa',
+        base: process.env.DEPLOY_BASE_URL, //Base URL para el despliegue, si no se especifica, se usa la raíz del dominio
         build:{
             rollupOptions:{
                 input:obtenerEntradas()
