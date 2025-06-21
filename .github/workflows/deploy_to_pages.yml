@@ -39,7 +39,7 @@ jobs:
        uses: actions/upload-pages-artifact@v3
        with:
         path: './dist'
-     - name: 8. Publicar el sitio
+     - name: 8. Publicar el sitio.
        id: deplyment
        uses: actions/deploy-pages@v4
           
